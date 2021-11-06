@@ -25,4 +25,17 @@ echo "SSH service analysis..."
 sudo service ssh status
 fi
 
+read -p "Install vscode?[y/n]>" vscode
+if [ $vscode = "y" ]
+then
+echo "Downloading vscode..."
+sudo wget https://www.dropbox.com/s/dlqb6dw6d920fzp/vscode.deb?dl=0
+sudo mv /home/$USER/vscode /home/$USER/Downloads
+echo "Download completed"
+echo "Starting install..."
+dpkg -i /home/$USER/Downloads/vscode.deb
+echo "Installing finished!"
+fi
+
+
 echo "Start up config succesfully completed, have a nice day :)"
