@@ -20,7 +20,7 @@ read -p "Start ssh service?[y/n]>" Sssh
 if [ $Sssh = "y" ]
 then
 echo "Starting SSH service..."
-service ssh start
+sudo service ssh start
 fi
 
 echo "Start up config succesfully completed, have a nice day :)"
