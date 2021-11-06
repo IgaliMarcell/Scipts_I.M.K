@@ -21,6 +21,8 @@ if [ $Sssh = "y" ]
 then
 echo "Starting SSH service..."
 sudo service ssh start
+echo "SSH service analysis..."
+sudo service ssh status
 fi
 
 echo "Start up config succesfully completed, have a nice day :)"
