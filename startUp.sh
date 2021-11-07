@@ -36,9 +36,10 @@ fi
 read -p "Install vscode?[y/n]>" vscode
 if [ $vscode = "y" ]
 then
+cd /home/$USER/Downloads
 echo "Downloading vscode..."
 sudo wget https://www.dropbox.com/s/dlqb6dw6d920fzp/vscode.deb?dl=0
-sudo mv /home/$USER/Desktop/vscode.deb?dl=0 /home/$USER/Downloads
+#sudo mv /home/$USER/Desktop/vscode.deb?dl=0 /home/$USER/Downloads
 echo "Download completed" 
 echo "Starting install..."
 sudo dpkg -i /home/$USER/Downloads/vscode.deb?dl=0
